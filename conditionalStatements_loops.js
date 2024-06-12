@@ -27,18 +27,18 @@ if (Num % 2 && Num % 3 == 0) {
 
 //Excersice 3: For loops
 //1
-for (let i = 1; i < 11; i++) {
+for (let i = 1; i < 11; i++) {  //printing numbers 1-10
   console.log(i);
 }
 //2
-for (let m = 1; m < 21; m++) {
+for (let m = 1; m < 21; m++) { // output numbers divisible by 2
   if (m % 2 == 0) {
     console.log(m);
   }
 }
 //3
 let summ = 0;
-for (let z = 1; z < 101; z++) {
+for (let z = 1; z < 101; z++) { // summ all numbers from 1-100
   summ += z;
 }
 console.log(summ);
@@ -59,22 +59,23 @@ console.log(num55);
 // 5
 const numbers1 = [3, 7, 72, 5, 10, 6];
 let largnum = numbers1[0];
-for (let r = 1; r < numbers1.length; r++) {
+for (let r = 1; r < numbers1.length; r++) { // Find the largest number on array
   if (largnum < numbers1[r]) {
     largnum = numbers1[r];
   }
 }
 console.log(largnum);
 //Exercise 4
+
 //1
 let s = 1;
-while (s < 11) {
-  console.log(s);
+while (s < 11) { //print numbers 1-10
+  console.log(s); 
   s++;
 }
 //2
 let u = 0;
-while (u < 21) {
+while (u < 21) { // print numbers divisible by 2
   if (u % 2 == 0) {
     console.log(u);
   }
@@ -83,14 +84,14 @@ while (u < 21) {
 //3
 let d = 1;
 let sum2 = 0;
-while (d < 101) {
+while (d < 101) { // sum numbers from 1-100
   sum2 += d;
   d++;
 }
 console.log(sum2);
 //4
 let mul50 = 0;
-while (mul50 <= 50) {
+while (mul50 <= 50) {  // find multiples of 50
   if (50 % mul50 == 0) {
     console.log(mul50);
   }
@@ -113,12 +114,12 @@ console.log(sum1);
 //3
 let UserNo;
 do {
-  UserNo = prompt("Enter a number greater 10: ");
-} while (UserNo < 10);
+  UserNo = prompt("Enter a number greater 10: "); 
+} while (UserNo < 10);                      // run until user inputs number > 10
 console.log("You entered valid no", UserNo);
 //4
 let Guess = 7;
 do {
   Input = prompt("Guess a number between 1 and 10: ");
-} while (Guess != Input); 
+} while (Guess != Input);                         // run until user guesses number given
 console.log("Your guess: ", Guess, "is correct");
